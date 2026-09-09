@@ -1,62 +1,51 @@
-# EDP AI/ML Internship - Week 4
+# Week 6 Attendance Logging and Edge Cases
 
-## Project
-Face Detection Attendance System
-
-## Week 4 Topics
-- OpenCV
-- Haar Cascades
+## Topics Learned
+- Attendance logging
+- Handling low-light conditions
+- Multiple face detection
+- Duplicate attendance prevention
+- CSV file handling
 
 ## Objective
-The objective of Week 4 is to detect human faces in real time using a webcam with OpenCV and Haar Cascade Classifier.
+
+To improve the face recognition attendance system by handling
+different real-world conditions and maintaining an attendance log.
 
 ## Implementation
 
-The program captures live video from the webcam and processes each frame using OpenCV.
+The system uses OpenCV Haar Cascade for face detection and
+LBPH face recognition for matching known faces.
 
-A Haar Cascade Classifier is used to detect faces in the video frames.
-
-When a face is detected:
-- A rectangle is drawn around the face.
-- "Face Detected" is displayed.
-- The number of detected faces is displayed.
+The system:
+- Detects faces using a webcam
+- Handles multiple faces
+- Improves grayscale images in low-light conditions
+- Recognizes known faces
+- Identifies unknown faces
+- Records attendance automatically
+- Stores Name, Date, Time and Status in a CSV file
+- Prevents duplicate attendance for the same person on the same day
 
 ## Technologies Used
 
 - Python
 - OpenCV
-- Haar Cascade Classifier
-- Webcam
-- Visual Studio Code
+- NumPy
+- CSV
+- Haar Cascade
+- LBPH Face Recognition
 
-## Steps Performed
+## Output
 
-1. Installed OpenCV using `opencv-python`.
-2. Loaded the Haar Cascade face detection model.
-3. Accessed the computer webcam using OpenCV.
-4. Captured video frames continuously.
-5. Converted frames to grayscale.
-6. Detected faces using Haar Cascade.
-7. Drew bounding boxes around detected faces.
-8. Displayed the number of detected faces.
-9. Tested real-time face detection using the webcam.
+The system displays the detected person's name and attendance
+status on the webcam screen.
+
+Attendance is stored in `attendance.csv`.
 
 ## Technical Skills Learned
 
-- OpenCV
-- Haar Cascade Classifier
-- Computer Vision Basics
-- Real-time Webcam Processing
-- Image and Video Processing
-- Face Detection
-- Grayscale Image Conversion
-- Bounding Box Detection
-- Python Programming
-
-
-## How to Run
-
-Install OpenCV:
-
-```bash
-pip install opencv-python
+I learned how to implement attendance logging using Python and
+CSV files. I also learned how to handle edge cases such as
+low lighting, multiple faces, unknown faces and duplicate
+attendance records using OpenCV.
