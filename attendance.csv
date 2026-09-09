@@ -1,7 +1,2 @@
-Student_ID,Name,Department,Attendance
-101,Rahul,CSE,Present
-102,Priya,IT,Absent
-103,Ajay,CSE,Present
-104,Sneha,IT,
-105,Ravi,CSE,Present
-105,Ravi,CSE,Present
+Name,Date,Time,Status
+Sushma,2026-09-09,21:22:27,Present
